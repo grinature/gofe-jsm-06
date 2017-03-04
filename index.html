@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Homework - Modules 05,06</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/reset-em.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script async="false" src="js/logger.js"></script>
+    <script async="true" src="js/stopwatch.js"></script>
+
+</head>
+<body>
+  <div class="wrapper-main">
+    <div class="wrapper-stopwatch">
+      <div class="scoreboard">
+        <div class="stopwatch-hours">00</div>
+        <div class="stopwatch-delimiter">:</div>
+        <div class="stopwatch-minutes">00</div>
+        <div class="stopwatch-delimiter">:</div>
+        <div class="stopwatch-seconds">00</div>
+        <div class="stopwatch-delimiter">::</div>
+        <div class="stopwatch-milliseconds">000</div>
+      </div>
+      <div class="stopwatch_control-wrapper">
+        <!-- Controls of StopWatch : { Start, Pause, Continue } + { Clear } -->
+        <button data-control-start="start" class="control control__start">start</button>
+        <button data-control-clear="clear" class="control control__clear">clear</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
