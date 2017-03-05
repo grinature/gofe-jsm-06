@@ -64,7 +64,9 @@
 
   color: rgba(10, 185, 10, 1);
 
-  font: 2.5rem/1.5 sans-serif;
+  /*font: 2.5rem/1.5 sans-serif;*/
+  /*font-family: 'Nova Mono', monospace;*/
+  font: 2.5rem/1.5 'Nova Mono', monospace;
   font-weight: bold;
 }
 
