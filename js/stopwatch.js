@@ -153,7 +153,8 @@ function Stopwatch(swUIObj = null) {
     */
     const   SW_SCOREBOARD_REFRESH_LOW = 1000,
             SW_SCOREBOARD_REFRESH_MIDDLE = 500,
-            SW_SCOREBOARD_REFRESH_HIGH = 200;
+            SW_SCOREBOARD_REFRESH_HIGH = 200,
+            SW_SCOREBOARD_REFRESH_NORMAL = 40;  // 25 frames per second
 
     // Stopwatch Values measured at the moment
     let swBody = {
@@ -250,9 +251,7 @@ function Stopwatch(swUIObj = null) {
         // Miiliseconds live here to work faster ...
         swBody.timeMomentStart = Date.now();
 
-        // swBody.refreshTimerId = setInterval(showStopWatch.bind(this), SW_SCOREBOARD_REFRESH_HIGH);
-        // swBody.refreshTimerId = setInterval(showStopWatch.bind(this), SW_SCOREBOARD_REFRESH_MIDDLE);
-        swBody.refreshTimerId = setInterval(showStopWatch.bind(this), SW_SCOREBOARD_REFRESH_LOW);
+        swBody.refreshTimerId = setInterval(showStopWatch.bind(this), SW_SCOREBOARD_REFRESH_NORMAL);
 
         oLogger.log('End of <runStartPhase>');
     }
